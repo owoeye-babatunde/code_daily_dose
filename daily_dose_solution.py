@@ -13,11 +13,11 @@ Created on Fri Oct 28 06:20:37 2022
 
 def miniMaxSum(arr):
     # Write your code here
-    arr1 = arr.copy()
-    arr2 = arr.copy()
-    arr1.remove(max(arr))
-    arr2.remove(min(arr))
-    print(sum(arr1), sum(arr2))
+    min_sum = arr.copy()
+    max_sum = arr.copy()
+    min_sum.remove(max(arr))
+    max_sum.remove(min(arr))
+    print(sum(min_sum), sum(max_sum))
 if __name__ == '__main__':
 
     arr = list(map(int, input().rstrip().split()))
